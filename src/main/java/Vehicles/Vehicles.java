@@ -3,8 +3,6 @@ package Vehicles;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 @Getter
 @Setter
 @NoArgsConstructor
