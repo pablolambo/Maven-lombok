@@ -2,16 +2,22 @@ import Vehicles.*;
 import lombok.ToString;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @ToString
 public class MainLoop {
 
-    void optionsLoop(){
+    private static final Logger logger = LogManager.getLogger(MainLoop.class);
+    private Scanner scanner = new Scanner(System.in);
+
+    void optionsLoop() {
         ArrayList<Vehicles> twoVehicles = new ArrayList();
-        twoVehicles.add(new Car("Ford",220,1990));
-        twoVehicles.add(new Car("Fiat",10,2010));
+        twoVehicles.add(new Car("Ford", 220, 1990));
+        twoVehicles.add(new Car("Fiat", 10, 2010));
         twoVehicles.add(new Bicycle("Ghost", 50, "Górski"));
         twoVehicles.add(new Bicycle("Ghost", 25, "Miejski"));
         twoVehicles.add(new Ship("GhostMarine", 100, "Tiger"));
@@ -23,7 +29,7 @@ public class MainLoop {
         do {
             showOptions();
             option = getOption();
-            switch (option){
+            switch (option) {
                 case CAR:
                 case PLANE:
                 case BICYCLE:
@@ -31,41 +37,63 @@ public class MainLoop {
                     showTheFastestVehicle(twoVehicles);
                     break;
                 case ALL:
-                    showAllVehicles(twoVehicles);
+                    for (Vehicles vehicle : twoVehicles) {
+                        logger.info(vehicle.toString());
+                    }
                     break;
                 case EXIT:
                     exit();
                     break;
                 default:
-                    System.out.println("Podaj prawidłową opcję”");          // LOGIEM ZROB
+                    logger.debug("Podaj prawidłową opcję!");
             }
-        } while(option != Option.EXIT);
+        } while (option != Option.EXIT);
     }
 
-    private void showTheFastestVehicle(Vehicles vehicles) {
-        for(Vehicles vehicle : vehicles){
+    private void showTheFastestVehicle(ArrayList<Vehicles> vehiclesList) {
+        Vehicles fastest = vehiclesList.get(0);
+        int maxSpeed = 0;
+        for (int i = 0; i < vehiclesList.size(); i++) {
+            if (ifTheSameClass(fastest,vehiclesList,i)) { // sortowanie babelkowe? kazdy z kazdym musi sprawdzac
 
+            }
         }
     }
+        //logger.info("Pojazd {} producenta {} jest najszybszy (maksymalna predkosc = {} )", 3 zmienne);
 
-    private void exit(){
 
+
+    private boolean ifTheSameClass(Vehicles fastest,ArrayList<Vehicles> vehiclesList, int index){
+        return fastest.getClass().equals(vehiclesList.get(index + 1).getClass());
+    }
+    private void exit() {
+        logger.info("Uzytkownik sie wylogowal.");
     }
 
     private Option getOption() {
-        // zapytaj loggiem jaka chce opcje
+        logger.info("Wybierz opcje:");
+        boolean flag = true;
+        Option option = null;
 
+        while (flag) {
+            try {
+                option = Option.valueOf(scanner.nextLine().toUpperCase());
+                flag = false;
+            } catch (NoSuchElementException | IllegalArgumentException e) {
+                logger.warn("Sprobuj ponownie");
+            }
+        }
+        return option;
     }
 
-    private void showOptions(){
-        System.out.println("\nWybierz opcję: ");
-        for(Option option : Option.values()){
-            System.out.println(option.toString());                        // LOGIEM ZROB
+    private void showOptions() {
+        logger.info("Lista opcji:");
+        for (Option option : Option.values()) {
+            logger.info(option.toString());
         }
     }
 
     private enum Option {
         CAR, SHIP, PLANE, BICYCLE, ALL, EXIT
     }
-
 }

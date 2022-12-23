@@ -1,9 +1,0 @@
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-
-public class Vehicle {
-    void printCos(){
-        System.out.println("cos");
-    }
-}

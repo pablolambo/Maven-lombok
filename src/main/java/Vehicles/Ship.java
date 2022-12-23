@@ -11,4 +11,14 @@ public class Ship extends Vehicles{
         super(producer, maxVelocity);
         this.name = name;
     }
+
+    @Override
+    public String getType() {
+        return "ship";
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + getProducer() + ", maksymalna predkosc: " + getMaxVelocity();
+    }
 }

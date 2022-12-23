@@ -12,4 +12,14 @@ public class Car extends Vehicles{
         super(producer, maxVelocity);
         this.year = year;
     }
+
+    @Override
+    public String getType() {
+        return "car";
+    }
+
+    @Override
+    public String toString() {
+        return getProducer() + " " + year + ", maksymalna predkosc: " + getMaxVelocity();
+    }
 }

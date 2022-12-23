@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 
-public  class Vehicles {
+public abstract class Vehicles {
     private String producer;
     private int maxVelocity; // int czy Integer ???? zadecyduj potem
 
@@ -15,6 +15,12 @@ public  class Vehicles {
         this.producer = producer;
         this.maxVelocity = maxVelocity;
     }
+
+    public abstract String getType();
+    @Override
+    public abstract String toString();
+
+
 
 //    @Override
 //    public String toString() {

@@ -11,4 +11,14 @@ public class Bicycle extends Vehicles {
         super(producer, maxVelocity);
         this.type = type;
     }
+
+    @Override
+    public String getType() {
+        return "bicycle";
+    }
+
+    @Override
+    public String toString() {
+        return getProducer() + " " + type + ", maksymalna predkosc: " + getMaxVelocity();
+    }
 }
