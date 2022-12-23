@@ -2,6 +2,8 @@ import Vehicles.*;
 import lombok.ToString;
 
 import java.util.ArrayList;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @ToString
 public class MainLoop {
@@ -23,19 +25,13 @@ public class MainLoop {
             option = getOption();
             switch (option){
                 case CAR:
-                    showTheFastestVehicle();
-                    break;
-                case BICYCLE:
-                    showTheFastestVehicle();
-                    break;
                 case PLANE:
-                    showTheFastestVehicle();
-                    break;
+                case BICYCLE:
                 case SHIP:
-                    showTheFastestVehicle();
+                    showTheFastestVehicle(twoVehicles);
                     break;
                 case ALL:
-                    showAllVehicles();
+                    showAllVehicles(twoVehicles);
                     break;
                 case EXIT:
                     exit();
@@ -44,6 +40,12 @@ public class MainLoop {
                     System.out.println("Podaj prawidłową opcję”");          // LOGIEM ZROB
             }
         } while(option != Option.EXIT);
+    }
+
+    private void showTheFastestVehicle(Vehicles vehicles) {
+        for(Vehicles vehicle : vehicles){
+
+        }
     }
 
     private void exit(){
