@@ -1,0 +1,62 @@
+2022-12-24 14:34:21.100 [main] INFO  MainLoop - Lista opcji:
+2022-12-24 14:34:21.107 [main] INFO  MainLoop - CAR
+2022-12-24 14:34:21.108 [main] INFO  MainLoop - SHIP
+2022-12-24 14:34:21.108 [main] INFO  MainLoop - PLANE
+2022-12-24 14:34:21.108 [main] INFO  MainLoop - BICYCLE
+2022-12-24 14:34:21.108 [main] INFO  MainLoop - ALL
+2022-12-24 14:34:21.108 [main] INFO  MainLoop - EXIT
+2022-12-24 14:34:21.108 [main] INFO  MainLoop - Wybierz opcje:
+2022-12-24 14:34:22.745 [main] INFO  MainLoop - Pojazd car producenta Ford jest najszybszy (maksymalna predkosc = 220 )
+2022-12-24 14:34:22.745 [main] INFO  MainLoop - Lista opcji:
+2022-12-24 14:34:22.745 [main] INFO  MainLoop - CAR
+2022-12-24 14:34:22.745 [main] INFO  MainLoop - SHIP
+2022-12-24 14:34:22.745 [main] INFO  MainLoop - PLANE
+2022-12-24 14:34:22.745 [main] INFO  MainLoop - BICYCLE
+2022-12-24 14:34:22.746 [main] INFO  MainLoop - ALL
+2022-12-24 14:34:22.746 [main] INFO  MainLoop - EXIT
+2022-12-24 14:34:22.746 [main] INFO  MainLoop - Wybierz opcje:
+2022-12-24 14:34:25.588 [main] INFO  MainLoop - Pojazd ship producenta GhostMarine jest najszybszy (maksymalna predkosc = 100 )
+2022-12-24 14:34:25.589 [main] INFO  MainLoop - Lista opcji:
+2022-12-24 14:34:25.589 [main] INFO  MainLoop - CAR
+2022-12-24 14:34:25.589 [main] INFO  MainLoop - SHIP
+2022-12-24 14:34:25.589 [main] INFO  MainLoop - PLANE
+2022-12-24 14:34:25.589 [main] INFO  MainLoop - BICYCLE
+2022-12-24 14:34:25.589 [main] INFO  MainLoop - ALL
+2022-12-24 14:34:25.589 [main] INFO  MainLoop - EXIT
+2022-12-24 14:34:25.590 [main] INFO  MainLoop - Wybierz opcje:
+2022-12-24 14:34:28.603 [main] INFO  MainLoop - Pojazd plane producenta ArabicAirlines jest najszybszy (maksymalna predkosc = 500 )
+2022-12-24 14:34:28.604 [main] INFO  MainLoop - Lista opcji:
+2022-12-24 14:34:28.604 [main] INFO  MainLoop - CAR
+2022-12-24 14:34:28.604 [main] INFO  MainLoop - SHIP
+2022-12-24 14:34:28.604 [main] INFO  MainLoop - PLANE
+2022-12-24 14:34:28.604 [main] INFO  MainLoop - BICYCLE
+2022-12-24 14:34:28.604 [main] INFO  MainLoop - ALL
+2022-12-24 14:34:28.604 [main] INFO  MainLoop - EXIT
+2022-12-24 14:34:28.605 [main] INFO  MainLoop - Wybierz opcje:
+2022-12-24 14:34:33.735 [main] INFO  MainLoop - Pojazd bicycle producenta Ghost jest najszybszy (maksymalna predkosc = 50 )
+2022-12-24 14:34:33.735 [main] INFO  MainLoop - Lista opcji:
+2022-12-24 14:34:33.736 [main] INFO  MainLoop - CAR
+2022-12-24 14:34:33.736 [main] INFO  MainLoop - SHIP
+2022-12-24 14:34:33.736 [main] INFO  MainLoop - PLANE
+2022-12-24 14:34:33.736 [main] INFO  MainLoop - BICYCLE
+2022-12-24 14:34:33.736 [main] INFO  MainLoop - ALL
+2022-12-24 14:34:33.736 [main] INFO  MainLoop - EXIT
+2022-12-24 14:34:33.736 [main] INFO  MainLoop - Wybierz opcje:
+2022-12-24 14:34:41.433 [main] WARN  MainLoop - Sprobuj ponownie
+2022-12-24 14:34:46.768 [main] INFO  MainLoop - Ford 1990, maksymalna predkosc: 220
+2022-12-24 14:34:46.768 [main] INFO  MainLoop - Fiat 2010, maksymalna predkosc: 10
+2022-12-24 14:34:46.771 [main] INFO  MainLoop - Ghost Górski, maksymalna predkosc: 50
+2022-12-24 14:34:46.771 [main] INFO  MainLoop - Ghost Miejski, maksymalna predkosc: 25
+2022-12-24 14:34:46.771 [main] INFO  MainLoop - Tiger GhostMarine, maksymalna predkosc: 100
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - Titanic GhostMarine, maksymalna predkosc: 80
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - Boeing-750 ArabicAirlines, maksymalna predkosc: 500
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - Boeing-630 ArabicAirlines, maksymalna predkosc: 480
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - Lista opcji:
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - CAR
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - SHIP
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - PLANE
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - BICYCLE
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - ALL
+2022-12-24 14:34:46.772 [main] INFO  MainLoop - EXIT
+2022-12-24 14:34:46.773 [main] INFO  MainLoop - Wybierz opcje:
+2022-12-24 14:34:48.583 [main] INFO  MainLoop - Uzytkownik sie wylogowal.
